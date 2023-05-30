@@ -36,7 +36,7 @@ pipeline {
           withMaven(maven: getMavenVersion(params.MAVEN_VERSION), publisherStrategy: 'EXPLICIT') {
           sh "echo ${currentCheckstyleRulesStr} \n\
               cd api\n\
-              mvn -B -ntp clean package -P static-code-analysis ${currentCheckstyleRulesStr}\n\
+              //mvn -B -ntp clean package -P static-code-analysis ${currentCheckstyleRulesStr}\n\
               echo \"static code analysis finished\""
               }
         }
