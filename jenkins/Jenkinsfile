@@ -42,10 +42,10 @@ pipeline {
         }
 
         echo "Reading static analysis report"
-        recordIssues enabledForFailure: true, failOnError: false, tool: checkStyle(pattern: "**/target/checkstyle-result.xml")
-        recordIssues enabledForFailure: true, failOnError: false, tool: spotBugs(pattern: "**/target/spotbugs*.xml")
-        recordIssues enabledForFailure: true, failOnError: false, tool: cpd(pattern: "**/target/cpd.xml")
-        recordIssues enabledForFailure: true, failOnError: false, tool: pmdParser(pattern: "**/target/pmd.xml")
+        //recordIssues enabledForFailure: true, failOnError: false, tool: checkStyle(pattern: "**/target/checkstyle-result.xml")
+        //recordIssues enabledForFailure: true, failOnError: false, tool: spotBugs(pattern: "**/target/spotbugs*.xml")
+        //recordIssues enabledForFailure: true, failOnError: false, tool: cpd(pattern: "**/target/cpd.xml")
+        //recordIssues enabledForFailure: true, failOnError: false, tool: pmdParser(pattern: "**/target/pmd.xml")
       }
     }
 
